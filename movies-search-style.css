@@ -1,0 +1,524 @@
+/* //Removing default styles */
+*{
+    margin:0px;
+    padding:0px;
+    box-sizing: border-box;
+}
+html{
+    scroll-behavior: smooth;
+}
+body{
+    background-color:black;
+    
+    /* grid-gap:20px; */
+}
+/* width */
+::-webkit-scrollbar {
+    width: 14px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    /* //box-shadow: inset 0 0 5px grey;  */
+    border-radius: 10px;
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: red; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #b30000; 
+  }
+.flickity-page-dots{
+    display:none;
+}
+.name-div{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30px;
+    border-radius: 50%;
+    width: 30px;
+    background-color: #dc1f11;
+    text-transform: uppercase;
+    color: white;
+}
+.name-div:hover{
+    background-color:rgba(255, 0, 0, 0.712);
+    cursor:pointer;
+    transform:scale(1,1);
+}
+.image-overlay{
+    width:100%;
+    height:100%;
+    background:black;
+    opacity:.7;
+    position:absolute;
+}
+.pop-rating{
+    display:inline-block;
+    /* color:#226089; */
+    color:white;
+    font-weight:bolder;
+}
+i{
+    color:gold;
+    font-weight:revert;
+    font-size:20px;
+}
+.item-btn{
+    width:20px;
+    height:20px;
+    color:white;
+    background-color:#dc1f11;
+}
+.item-btn h2{
+    display:none;
+}
+.pop-title{
+    /* color:#d72323; */
+    color:red;
+    font-weight:bolder;
+}
+/* .pop-overlay{
+    position: inherit;
+    width: 200px;
+    height: 298px;
+    opacity: .7;
+    z-index: 1;
+    margin-top: 35px;
+    background-color: white;
+} */
+.item-overlay{
+    position: inherit;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    margin-top: 35px;
+    /* background-color: rgba(20, 20, 20, 0.644); */
+    background-image:linear-gradient(to bottom,black,rgba(20, 20, 20, 0.137));
+    border-radius:5px;
+    height: 302px;
+    opacity:0;
+}
+.main-carousel  .item-overlay:hover{
+    opacity:1;
+    transition:all 0.5s;
+    cursor:pointer;
+}
+.green{
+    color:green;
+}
+#travel{
+    color:black;
+}
+/* .Home-div:hover{
+    cursor:hand;
+    background-color:red;
+    animation:home-animation 1s ease-in;
+} */
+ .nav-links a::after{
+    content:'.';
+    height:2px;
+    width:0;
+    background-color: red;
+    color:red; 
+} 
+.nav-links a:hover::after{
+    width:100%;
+    transition:0.4s ease-in-out;
+}
+.nav-links a{
+    display:grid;
+    place-items:center;
+}
+@keyframes home-animation{
+    from{   
+            display:none;
+            height:1px;
+            width:1px;
+    }
+    to{
+        display:block;
+        height:2px;
+        width:inherit;
+    }
+    
+}
+ .go-Link{
+      padding:20px 20px 20px;
+      font-family: 'Poppins', sans-serif;
+      padding-left: 24px;
+      position: absolute;
+      height: 60px;
+      background-color: red;
+      text-decoration: none;
+      color: rgb(248, 246, 246);
+      border: none;
+      z-index: 1;
+      display: inline-block;
+      width: 66px;
+      margin-bottom: 0px;
+}
+.main-carousel{
+    background-color:black;
+    
+}
+.movies-Div .main-carousel img{
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border:1px solid black;
+    margin-right: 25px;
+    margin-top:35px; 
+     width:200px;
+    height:298px;
+   
+}
+.popularmovies{
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border:1px solid black;
+    margin-right: 25px;
+    margin-top:35px; 
+     width:200px;
+    height:298px;
+   
+}
+.Tv-Div .main-carousel img{
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border:1px solid black;
+    margin-right: 25px;
+    margin-top:35px; 
+     width:200px;
+    height:298px;
+   
+}
+.Drama-Div .main-carousel img{
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border:1px solid black;
+    margin-right: 25px;
+    margin-top:35px; 
+     width:200px;
+    height:298px;
+   
+}
+.Action-Div .main-carousel img{
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border:1px solid black;
+    margin-right: 25px;
+    margin-top:35px; 
+     width:200px;
+    height:298px;
+   
+}
+.Fiction-Div .main-carousel img{
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border:1px solid black;
+    margin-right: 25px;
+    margin-top:35px; 
+     width:200px;
+    height:298px;
+   
+}
+.movies-Div h4{
+    font-size: 26px;
+}
+.Tv-Div h4{
+    font-size: 26px;
+}
+.Drama-Div h4{
+    font-size: 26px;
+}
+.Action-Div h4{
+    font-size: 26px;
+}
+.Fiction-Div h4{
+    font-size: 26px;
+}
+#travel{
+    margin-top:60vh;
+}
+.design{
+    margin:10px;
+}
+.design:hover{
+    border:none;
+    box-shadow: 0px 0px 10px #f30f0f;
+}
+ .m2 .main-carousel{
+    background-size:cover;
+    background-color:black;
+    height:92vh;
+    box-sizing: border-box;
+    position:relative;  
+}
+ .m2 .main-carousel .carousel-cell{ 
+    display:flex;
+    height:88vh;
+    background-color:white;
+    width:96%;
+    background-image: url("money-heist.jpg");
+    background-size:cover;
+}
+.main-infodiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    height:88vh;
+    width:50%;
+    /* background-color:rgba(0, 0, 0, 0.664); */
+    background-image:linear-gradient(to right,black 30%,rgba(20, 20, 20, 0));
+}
+.m2 .main-carousel .carousel-cell .main-infodiv  img{
+    width:inherit;
+}
+.main-infodiv h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    color: white;
+    font-size: 2.125rem;
+    z-index: 1;
+}
+.main-infodiv h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 0rem;
+    margin-top: -11rem;
+    color: white;
+    font-size: 1.625rem;
+    z-index: 1;
+}
+.main-infodiv h5{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;  
+    color: white;
+    font-size: 20px;
+    font-weight:500;
+}
+.m2 .main-carousel .flickity-button {
+display: none;
+}
+.main-carousel .flickity-button{
+    background:transparent;
+    color:red;
+    right:20px;
+    font-weight:bolder;
+}
+.search_btn{
+    display:flex;
+    flex-direction: row;
+    padding-bottom:2px;
+}
+.search_btn i{
+    color:black;
+    font-size:20px;
+}
+
+input{
+    font-family: 'Poppins', sans-serif;
+    font-size:20px;
+    padding:1em;
+    height:40px;
+    border:none;
+    
+}
+input:focus{
+    outline: none;
+}
+.search_btn button{
+    height:40px;
+    width:40px;
+    font-size:20px;
+    border:none;
+    background-color:#f5eded;
+    cursor:pointer;
+}
+.search_btn button:hover{
+    background-color:red;
+    transition:1s ease;
+    color:white;
+}
+.search_btn button i:hover{
+    color:white;
+}
+#searchInput{
+    z-index:3;
+}
+nav{
+    display:flex;
+    justify-content: space-around;
+    align-items:center;
+    margin-top:2px;
+    min-height: 6vh;
+    font-family: 'Poppins', sans-serif;
+    font-weight: bold;
+    background-color:black;
+}
+h1{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 2rem;
+    margin-top: -19rem;
+    color: white;
+    font-size: 32px;
+    z-index: 1;
+}
+h3{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;
+    position: absolute;
+    margin-left: 0rem;
+    margin-top: -11rem;
+    color: white;
+    font-size: 20px;
+    z-index: 1;
+}
+h4{
+    font-family: 'Poppins', sans-serif;
+    font-weight: bolder;  
+    color: white;
+    font-size: 20px;
+    font-weight:500;
+}
+.logo{
+display: grid;
+place-items: center;
+height:40px;
+width:20px;
+margin-right:50%;
+background-size:contain;
+background-repeat: no-repeat;
+background-image:url("Netflix-1.png");
+}
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    width: 30%;
+}
+/* nav:hover a{
+    background-color: white;
+    color: black;
+} */
+.nav-links li{
+list-style: none;
+}
+.nav-links a{
+    text-decoration: none;
+    color:rgb(248, 248, 248);
+    letter-spacing: 2px;
+    font-weight: bold;
+}
+.burger {
+    display: none;
+}
+.burger div{
+    width:20px;
+    height:2px;
+    background-color: white;
+    margin:5px;
+    transition: all 0.3s ease;
+}
+@media screen and (max-width:1024px) {
+    .nav-links{
+        width:60%;
+    }
+}
+@media screen and (max-width:768px) {
+    .logo{
+        margin-left:3%;
+    }
+    body{
+        overflow-x: hidden;
+    }
+    .nav-links{
+        position:absolute;
+        right:0px;
+        height:92vh;
+        top:8vh;
+        background-color:black;
+        display:flex;
+        flex-direction: column;
+        align-items:center;
+        width:40%;
+        transform:translateX(100%);
+        transition: transform 0.5s ease-in;
+    }
+    .nav-links li{
+        opacity:0;
+    }
+    .burger{
+        display:block;
+    }
+    .nav-hover{
+        transform:translateX(0%);
+    }
+    @keyframes navLinkFade {
+        from{
+            opacity:0;
+            transform:translatex(50px);
+        }
+        to{
+            opacity:1;
+            transform:translateX(0px);
+        }
+    }
+    .toggle .line1{
+        transform:rotate(-45deg) translate(-6px,7px)
+    }
+    .toggle .line2{
+        opacity:0;
+    }
+    .toggle .line3{
+        transform:rotate(45deg) translate(-2px,-5px);
+    }
+}
+.c-cell{
+    display:flex;
+   flex-direction:column;
+   flex-wrap: wrap;
+   justify-content:space-evenly; 
+}  
+.head_style{
+    display:flex;
+   flex-direction:row;
+   flex-wrap: wrap;
+   justify-content:space-evenly; 
+}  
+.c-cell img{
+    position:absolute;
+    border-radius:5px;
+    box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.582);
+    border:1px solid black;
+    margin-right: 25px;
+    margin-top:35px; 
+     width:200px;
+    height:298px;
+}
+.c-cell .item-overlay{
+    position:relative;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    width: 200px;
+    margin-top: 35px;
+    background-image:linear-gradient(to bottom,black,rgba(20, 20, 20, 0.137));
+    border-radius:5px;
+    height: 302px;
+    opacity:0;
+}
+ .c-cell .item-overlay:hover{
+    opacity:1;
+    transition:all 0.5s;
+    cursor:pointer;
+}

@@ -1,0 +1,459 @@
+@import url("https://fonts.googleapis.com/css2?family=Zen+Tokyo+Zoo&display=swap");
+
+* {
+  margin: 0px;
+  padding: 0px;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  background-color: black;
+
+  /* grid-gap:20px; */
+}
+
+/* width */
+::-webkit-scrollbar {
+  width: 14px;
+}
+
+/* Track */
+::-webkit-scrollbar-track {
+  /* //box-shadow: inset 0 0 5px grey;  */
+  border-radius: 10px;
+}
+
+/* Handle */
+::-webkit-scrollbar-thumb {
+  background: red;
+  border-radius: 10px;
+}
+
+/* Handle on hover */
+::-webkit-scrollbar-thumb:hover {
+  background: #b30000;
+}
+
+.download-div {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  height: 40vh;
+  width: 97vw;
+}
+
+.img-play {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  cursor: pointer;
+}
+
+.online-player {
+  height: 100vh;
+  width: 99vw;
+}
+
+.download {
+  display: none;
+}
+
+.download:hover {
+  border: 5px solid rgb(106, 192, 69)
+}
+
+#m_quality {
+  font-size: 18px;
+}
+
+.inactive {
+  display: none;
+}
+
+.active {
+  display: inline;
+}
+
+.mobile-responsive {
+  display: none;
+  position: absolute;
+  height: 302px;
+  width: 200px;
+  top: 89%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 2px;
+}
+
+.mobile-responsive img {
+  border-radius: 26px;
+  box-shadow: 1px 3px 20px 11px black;
+
+}
+
+.download-active {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  justify-content: space-evenly;
+  height: 200px;
+  width: 200px;
+  background-color: rgb(23, 23, 23);
+  border: 5px solid white;
+  border-radius: 5px;
+}
+
+.uploading-div {
+  font-family: "Poppins", sans-serif;
+  font-weight: 900;
+  display: flex;
+  place-items: center;
+  justify-content: space-evenly;
+  height: 40vh;
+  width: 97vw;
+  font-size: 50px;
+  color: rgb(106, 192, 69);
+}
+
+.download button {
+
+  height: 40px;
+  width: 100px;
+  background-color: rgb(106, 192, 69);
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 17px;
+  font-weight: 900;
+  border-radius: 2px;
+  border: none;
+  background-image: url("download_120262.png");
+}
+
+#rating {
+  display: inline-block;
+  /* color:#226089; */
+  color: blue;
+  font-weight: bolder;
+}
+
+#rating_mob {
+  display: inline-block;
+  color: red;
+}
+
+i {
+  color: gold;
+  font-weight: revert;
+  font-size: 20px;
+}
+
+.carousel-celll {
+  position: absolute;
+  display: flex;
+  height: 100vh;
+  background-color: white;
+  width: 100%;
+  background-image: url("money-heist.jpg");
+  background-size: cover;
+  border-bottom: 30px solid black;
+  background-position: inherit;
+}
+
+.main-infodiv {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  height: 100vh;
+  width: 50%;
+  /* background-color:rgba(0, 0, 0, 0.664); */
+  background-image: linear-gradient(to right, black 30%, rgba(20, 20, 20, 0));
+}
+
+h4 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  font-weight: bold;
+}
+
+.nav-links a {
+  display: grid;
+  place-items: center;
+}
+
+nav {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  margin-top: 2px;
+  min-height: 6vh;
+  font-family: "Poppins", sans-serif;
+  font-weight: bold;
+  background-color: black;
+}
+
+.nav-links {
+  display: flex;
+  justify-content: space-around;
+  width: 30%;
+}
+
+.main-list {
+  background-size: cover;
+  background-color: black;
+  height: 100vh;
+  box-sizing: border-box;
+  position: relative;
+}
+
+.logo {
+  display: grid;
+  place-items: center;
+  height: 40px;
+  width: 20px;
+  margin-right: 50%;
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-image: url("Netflix-1.png");
+}
+
+.nav-links li {
+  list-style: none;
+}
+
+.nav-links a {
+  text-decoration: none;
+  color: rgb(248, 248, 248);
+  letter-spacing: 2px;
+  font-weight: bold;
+}
+
+.carousel-cell .main-infodiv img {
+  width: inherit;
+}
+
+.main-infodiv h1 {
+  font-family: "Zen Tokyo Zoo";
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  padding-bottom: 1em;
+  /* font-size: 2.125rem;
+    z-index: 1;  */
+}
+
+h2 {
+  display: none;
+  font-family: "Zen Tokyo Zoo";
+  text-transform: uppercase;
+  color: white;
+  letter-spacing: 2px;
+  margin-bottom: 10px;
+  /* padding-bottom: 1em; */
+  /* top: 67%;
+  left: 41%; */
+}
+
+.main-infodiv h3 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  position: absolute;
+  margin-left: 0rem;
+  margin-top: -11rem;
+  color: white;
+  font-size: 1.625rem;
+  z-index: 1;
+}
+
+.main-infodiv h5 {
+  font-family: "Poppins", sans-serif;
+  font-weight: bolder;
+  color: white;
+  font-size: 20px;
+  font-weight: 500;
+  width: inherit;
+}
+
+.cast-main {
+  display: flex;
+  justify-content: space-between;
+  flex-direction: row;
+  margin-left: 20px;
+  ;
+  width: 95vw;
+  height: 30vh;
+}
+
+.carousel-cell {
+  display: flex;
+  flex-direction: column;
+  place-items: center;
+  height: 300px;
+  width: 200px;
+  padding: 4px;
+}
+
+.cast {
+  display: flex;
+  height: 200px;
+  width: 200px;
+  border-radius: 50%;
+  background-size: cover;
+  /* background-color: transparent; */
+}
+
+
+.carousel-cell h6 {
+  font-family: "Poppins", sans-serif;
+  color: white;
+}
+
+.flickity-page-dots {
+  display: none;
+}
+
+.online_btn {
+  width: 100px;
+  height: 100px;
+  right: 200px;
+  background-color: green;
+}
+
+.flickity-prev-next-button.previous,
+.flickity-prev-next-button.next {
+  color: red;
+}
+
+.mob-center i {
+  /* position: absolute;
+  top: 73%;
+  left: 43%; */
+  display: none;
+  margin-bottom: 10px;
+}
+
+#mob_desc {
+  display: none;
+  /* position: absolute;
+  top: 78%;
+  left: 11%; */
+  font-size: 14px;
+  color: slategray;
+}
+
+.mob-center {
+  display: none;
+  height: 40vh;
+  width: 100%;
+  background-color: black;
+}
+
+@media screen and (max-width:480px) {
+  .carousel-celll {
+    width: 100%;
+    background-position: center;
+    height: 40vh;
+  }
+
+  .online-player {
+    height: 40vh;
+  }
+
+  .main-infodiv i {
+    position: absolute;
+    top: 38%;
+  }
+
+  .main-infodiv h4,
+  h5 {
+    display: none;
+  }
+
+  .main-infodiv h1 {
+    position: absolute;
+    padding-bottom: 10em;
+  }
+
+  /* .main-infodiv h1 {
+    padding-bottom: 10em;
+  } */
+  .flickity-button-icon {
+    display: none;
+  }
+
+  .flickity-prev-next-button.previous,
+  .flickity-prev-next-button.next {
+    display: none;
+  }
+
+  .mobile-responsive {
+    display: inline;
+    top: 44%;
+
+  }
+
+  .img-play {
+    width: 44px;
+    top: 14%;
+  }
+
+  .main-infodiv i {
+    display: none;
+  }
+
+  h1 {
+    display: none;
+  }
+
+  h2 {
+    display: block;
+text-align:center;
+
+  }
+
+  .fas fa-star {
+    display: inline;
+  }
+
+  #mob_desc {
+    display: block;
+text-align:center;
+  }
+
+
+
+  .main-infodiv {
+    height: 40vh;
+  }
+
+  .main-list {
+    height: 66vh;
+  }
+
+  .mob-center {
+    display: flex !important;
+    place-items: center;
+    flex-direction: column;
+
+  }
+
+  .mob-center i {
+    display: inline;
+  }
+
+}
